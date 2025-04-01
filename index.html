@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W10</title>
+
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control mt-4"
+          id="firstName"
+          placeholder="First Name"
+        />
+        <label for="firstName" class="">First Name</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control my-4"
+          id="lastName"
+          placeholder="Last Name"
+        />
+        <label for="lastName" class="">Last Name</label>
+      </div>
+
+      <button onclick="sayHello()" class="btn btn-outline-primary w-100">
+        Hello
+      </button>
+      <button onclick="clearForm()" class="btn btn-outline-danger w-100">
+        Reset
+      </button>
+    </div> -->
+
+    <div class="container">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control mt-4"
+          id="productName"
+          placeholder="Product Name"
+        />
+        <label for="productName" class="">Product Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control mt-4"
+          id="productPrice"
+          placeholder="Product Price"
+          min="1"
+        />
+        <label for="productPrice" class="">Product Price</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control mt-4"
+          id="productCat"
+          list="catList"
+          placeholder="Product Category"
+        />
+        <datalist id="catList">
+          <option value="TV">TV</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Electronics">Electronics</option>
+        </datalist>
+        <label for="productCat" class="">Product Category</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="file"
+          class="form-control mt-4"
+          id="productImage"
+          accept="image/*"
+          placeholder="Product Image"
+        />
+        <label for="productImage" class="">Product Image</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea
+          type="text"
+          class="form-control mt-4"
+          id="productDesc"
+          placeholder="Product Description"
+          style="resize: none; height: 8rem"
+        >
+        </textarea>
+        <label for="productDesc" class="">Product Description</label>
+      </div>
+      <button
+        onclick="handleProductOptions()"
+        class="btn btn-outline-primary w-100 my-3"
+        id="mainBtn"
+      >
+        ADD
+      </button>
+      <button
+        onclick="deleteFields()"
+        class="btn btn-outline-danger w-100 my-2"
+      >
+        Reset
+      </button>
+
+      <input
+        type="search"
+        class="form-control mt-4"
+        id="searchBtn"
+        placeholder="Search..."
+        onkeyup="searchProduct(this.value)"
+      />
+
+      <div
+        class="row my-5 d-flex justify-content-center align-items-center"
+        id="data-row"
+      ></div>
+    </div>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
