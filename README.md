@@ -1,5 +1,7 @@
 ﻿# Products-System
 
+## It's Mainly a javascript Application
+
 ## Form System Takes Product Info From User And add it and display it on THe UI
 
 ## has Search Bar option To search For Specified product
