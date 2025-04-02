@@ -79,6 +79,34 @@ const rowContent = document.getElementById("data-row");
 let allProducts = [];
 let imageVal = "chair.jpeg";
 
+productNameInput.addEventListener("input", function (e) {
+  if (validateInput(productNameRegex, productNameInput.value) === true) {
+    productNameInput.classList.remove("is-invalid");
+    productNameInput.classList.add("is-valid");
+  } else {
+    productNameInput.classList.add("is-invalid");
+    productNameInput.classList.remove("is-valid");
+  }
+});
+
+productNameInput.addEventListener("blur", function (e) {
+  productNameInput.classList.remove("is-invalid", "is-valid");
+});
+
+productCategoryInput.addEventListener("input", function (e) {
+  if (validateInput(productCatRegex, productCategoryInput.value) === true) {
+    productCategoryInput.classList.remove("is-invalid");
+    productCategoryInput.classList.add("is-valid");
+  } else {
+    productCategoryInput.classList.add("is-invalid");
+    productCategoryInput.classList.remove("is-valid");
+  }
+});
+
+productCategoryInput.addEventListener("blur", function (e) {
+  productCategoryInput.classList.remove("is-invalid", "is-valid");
+});
+
 // allProducts = JSON.parse(localStorage.getItem("allproducts"));
 
 // console.log(JSON.parse(localStorage.getItem("allproducts")));
